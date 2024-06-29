@@ -1,5 +1,6 @@
 <div>
     <h5>{{'新增轮播图片'. $carouselImages->count() .'/10'}}</h5>
+    <p class="text-danger">请上传1920*600或1320*400的图片，以保证最佳的显示效果，我们会在后续版本增加裁剪功能。</p>
     <div class="is-up-file" data-type="carousel_images" data-event="{{ $item->id }}">
         <div class="img-upload-item bg-light wh-80 rounded border d-flex justify-content-center align-items-center me-2 mb-2 position-relative cursor-pointer overflow-hidden">
             <div class="position-absolute tool-wrap {{ !$item->image_url ? 'd-none' : '' }} d-flex top-0 start-0 w-100 bg-primary bg-opacity-75">
